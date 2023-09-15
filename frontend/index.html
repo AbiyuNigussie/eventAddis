@@ -4,9 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/tailwind_style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- <script src="https://cdn.tailwindcss.com/3.3.3"></script> -->
     <title>Home</title>
   </head>
   <body>
-    <p class="text-green-600">red</p>
+    <div class="container hidden w-3/4 bg-slate-900 min-h-full fixed sideBar">
+      <div class="text-right px-5 py-5">
+        <li class="fa fa-close text-slate-50 text-2xl closeIcon"></li>
+      </div>
+      <ul class="flex flex-col py-7">
+        <li class="text-slate-50 py-5 px-10 active:bg-slate-800">Home</li>
+        <li class="text-slate-50 py-5 px-10 active:bg-slate-800">About</li>
+        <li class="text-slate-50 py-5 px-10 active:bg-slate-800">Events</li>
+        <li class="text-xl text-slate-50 py-5 px-10 active:bg-slate-800">
+          Contact
+        </li>
+      </ul>
+    </div>
+    <div
+      class="bg-[url('../assets/addis-ababa.jpg')] bg-cover bg-center min-h-screen md:min-h-min"
+    >
+      <div class="flex items-center pt-8 pl-4 gap-4 md:justify-between">
+        <div class="md:hidden">
+          <i
+            class="fa-solid fa-bars text-white cursor-pointer burgerNavIcon"
+          ></i>
+        </div>
+
+        <h3 class="text-white capitalize text-xl">logo</h3>
+        <ul class="hidden md:block">
+          <li class="list-none inline-block px-5">
+            <a href="#" class="text-white text-xl no-underline px-2">Home</a>
+          </li>
+          <li class="list-none inline-block px-5">
+            <a href="#" class="text-white text-xl no-underline px-2">About</a>
+          </li>
+          <li class="list-none inline-block px-5">
+            <a href="#" class="text-white text-xl no-underline px-2">Event</a>
+          </li>
+          <li class="list-none inline-block px-5">
+            <a href="#" class="text-white text-xl no-underline px-2">contact</a>
+          </li>
+        </ul>
+        <div class="hidden sm:hidden md:block md:mr-4 lg:mr-10">
+          <button
+            class="border-solid border-white border-2 py-1 px-3 rounded-xl mr-4"
+          >
+            <i class="fa-solid fa-bars text-white cursor-pointer"></i
+            ><i class="fa-solid fa-user text-white pl-2"></i>
+          </button>
+          <button
+            class="border-solid border-white border-2 px-3 py-1 text-white"
+          >
+            post Event
+          </button>
+        </div>
+      </div>
+      <div class="px-6 py-32 md:px-4 md:py-20">
+        <p class="uppercase text-white text-2xl font-bold mb-2">
+          events, meetups & conferences
+        </p>
+        <p class="capitalize pb-4 text-white">event lisiting & ticketing</p>
+        <a
+          href="#"
+          class="text-white mr-10 py-1 px-3 border-solid border-white border-2 font-bold no-underline bg-transparent"
+          >Events</a
+        >
+        <a
+          href="#"
+          class="text-white py-1 px-4 border-solid border-white border-2 font-bold no-underline bg-transparent"
+          >Join</a
+        >
+      </div>
+    </div>
+    <script src="js/index.js"></script>
   </body>
 </html>
