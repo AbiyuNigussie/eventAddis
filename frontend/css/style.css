@@ -5,3 +5,20 @@
 body, html {
     height: 100%;
 }
+
+.bg-one {
+    background-image: url("../assets/addis-ababa-min.jpg")
+}
+.bg-two {
+    background-image: url("../assets/event-one-min.jpg")
+}
+.bg-three {
+    background-image: url("../assets/event-two-min.jpg")
+}
+.bg-four {
+    background-image: url("../assets/event-three-min.jpg")
+}
+
+.bg-five {
+    background-image: url("../assets/event-four-min.jpg")
+}
