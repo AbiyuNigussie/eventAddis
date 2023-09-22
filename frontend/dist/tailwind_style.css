@@ -540,31 +540,31 @@ video {
 
 @media (min-width: 640px) {
   .container {
-    max-width: 640px;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
-    max-width: 1024px;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
-    max-width: 1280px;
+    max-width: 100%;
   }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 80%) {
   .container {
-    max-width: 1536px;
+    max-width: 100%;
   }
 }
 
@@ -633,7 +633,7 @@ video {
 }
 
 .h-\[329px\] {
-  height: 329px;
+  height: 3329px;
 }
 
 .min-h-full {
@@ -641,7 +641,7 @@ video {
 }
 
 .min-h-screen {
-  min-height: 100vh;
+  min-height: 100px;
 }
 
 .min-h-\[200vh\] {
@@ -682,6 +682,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-fo {
+  width: 30%;
 }
 
 .w-32 {
@@ -752,7 +756,7 @@ video {
 }
 
 .rounded-md {
-  border-radius: 0.375rem;
+  border-radius: 1.375rem;
 }
 
 .rounded-xl {
@@ -822,6 +826,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 20 / var(--tw-bg-opacity));
+}
+
 .bg-slate-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
@@ -881,7 +890,15 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
 
+.hover\:bg-blue-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
 .bg-\[\#f7f8f9\] {
   --tw-bg-opacity: 1;
   background-color: rgb(247 248 249 / var(--tw-bg-opacity));
@@ -889,6 +906,25 @@ video {
 
 .bg-cover {
   background-size: cover;
+}
+.py-2 {
+  padding-top: 0.5rem/* 8px */;
+  padding-bottom: 0.5rem/* 8px */;
+}
+
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-green-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+}
+
+.rounded-full {
+  border-radius: 9999px;
+  width: 100px;
 }
 
 .bg-center {
@@ -1281,3 +1317,4 @@ body, html {
     margin-right: 2.5rem;
   }
 }
+
