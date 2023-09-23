@@ -3,10 +3,226 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
     <link rel="stylesheet" href="dist/output.css" />
     <title>Home</title>
   </head>
   <body>
     <h1 class="text-center font-bold">red</h1>
+=======
+    <link rel="stylesheet" href="dist/tailwind_style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    
+
+    <!-- <script src="https://cdn.tailwindcss.com/3.3.3"></script> -->
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="container hidden w-3/4 bg-slate-900 min-h-full fixed sideBar">
+      <div class="text-right px-5 py-5">
+        <li class="fa fa-close text-slate-50 text-2xl closeIcon"></li>
+      </div>
+      <ul class="flex flex-col py-7">
+        <li class="text-slate-50 py-5 px-10 active:bg-slate-800">
+          <i class="fa-solid fa-house pr-2"></i> Home
+        </li>
+        <li class="text-slate-50 py-5 px-10 active:bg-slate-800">
+          <i class="fa-solid fa-circle-info pr-2"></i>About
+        </li>
+        <li class="text-slate-50 py-5 px-10 active:bg-slate-800">
+          <i class="fa-solid fa-calendar-days pr-2"></i> Events
+        </li>
+        <li class="text-slate-50 py-5 px-10 active:bg-slate-800">
+          <i class="fa-solid fa-phone pr-2"></i> Contact
+        </li>
+      </ul>
+    </div>
+    <div class="bg-cover bg-center min-h-screen md:min-h-min bg-one slider">
+      <div class="bg-black/75 min-h-screen md:min-h-min">
+        <div class="flex items-center pt-8 pl-4 gap-4 md:justify-between">
+          <div class="md:hidden">
+            <i
+              class="fa-solid fa-bars text-white cursor-pointer burgerNavIcon"
+            ></i>
+          </div>
+
+          <h3 class="text-white capitalize text-xl">logo</h3>
+          <ul class="hidden md:block">
+            <li class="list-none inline-block px-5">
+              <a href="#" class="text-white text-xl no-underline px-2">Home</a>
+            </li>
+            <li class="list-none inline-block px-5">
+              <a href="#" class="text-white text-xl no-underline px-2">About</a>
+            </li>
+            <li class="list-none inline-block px-5">
+              <a href="#" class="text-white text-xl no-underline px-2">Event</a>
+            </li>
+            <li class="list-none inline-block px-5">
+              <a href="#" class="text-white text-xl no-underline px-2"
+                >contact</a
+              >
+            </li>
+          </ul>
+          <div class="hidden sm:hidden md:block md:mr-4 lg:mr-10">
+            <button
+              class="border-solid border-white border-2 py-1 px-3 rounded-xl mr-4"
+            >
+              <i class="fa-solid fa-bars text-white cursor-pointer"></i
+              ><i class="fa-solid fa-user text-white pl-2"></i>
+            </button>
+            <button
+              class="border-solid border-white border-2 px-3 py-1 text-white"
+            >
+              post Event
+            </button>
+          </div>
+        </div>
+        <div
+          class="min-h-full md:min-h-min px-6 py-32 md:px-4 md:py-20 text-center flex flex-col gap-5 md:block md:text-left"
+        >
+          <p
+            class="uppercase text-white text-2xl md:font-bold mb-2 md:text-3xl"
+          >
+            events, meetups & conferences
+          </p>
+          <p class="capitalize pb-4 text-white">event lisiting & ticketing</p>
+          <div class="flex flex-col mt-48 md:mt-10 gap-5 md:block">
+            <a
+              href="#"
+              class="text-white py-2 md:mr-10 md:py-1 md:px-3 border-solid rounded-md border-white border text-2xl md:text-xl no-underline bg-transparent"
+              >Events</a
+            >
+            <a
+              href="#"
+              class="text-white py-2 md:py-1 md:px-5 border-solid rounded-md border-white border text-2xl md:text-xl no-underline bg-transparent"
+              >Join</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container bg-[#f7f8f9] min-h-full  flex flex-col">
+      <p class="py-5 px-5 text-2xl text-gray-600 md:ml-24">Trending Events</p>
+      <div
+        class="container flex flex-col md:flex-row gap-5 justify-center items-center "
+      >
+        <div
+          class="w-full md:w-1/5  flex flex-col gap-5 bg-white border-solid border rounded-md "
+        >
+          <img src="assets/adwa-event.jpg" alt="adwa-event" />
+          <div class="flex flex-col gap-3 px-3">
+            <p class="text-md">African Union Conference</p>
+            <p class="text-[#4e4e4e] text-sm">
+              African Union Building, Addis Ababa
+            </p>
+          </div>
+          <div
+            class="mt-20 md:mt-20 border-solid border-t p-3 flex items-center justify-between "
+          >
+            <div class="flex gap-2 items-baseline">
+              <i class="fa-regular fa-user text-slate-400 text-2xl"></i>
+              <p class="text-md text-slate-500">African Union</p>
+              <i class="bi bi-patch-check-fill text-[#3897F0]"></i>
+            </div>
+            <p class="text-slate-500 text-sm">10min ago</p>
+          </div>
+        </div>
+        <div
+          class="w-full md:w-1/5 flex flex-col gap-5 bg-white border-solid border rounded-md"
+        >
+          <img src="assets/adwa-event.jpg" alt="adwa-event" />
+          <div class="flex flex-col gap-3 px-3">
+            <p class="text-md">National Athletics Event</p>
+            <p class="text-[#4e4e4e] text-sm">Addis Ababa</p>
+          </div>
+          <div
+            class="mt-20 md:mt-20 border-solid border-t p-3 flex justify-between"
+          >
+            <div class="flex items-center gap-2">
+              <i class="fa-regular fa-user text-slate-400 text-2xl"></i>
+              <p class="text-md text-slate-500 w-32">
+                Ethiopian 
+                <i class="bi bi-patch-check-fill text-[#3897F0]"></i>
+              </p>
+            </div>
+            <p class="text-slate-500 text-sm">2days ago</p>
+          </div>
+        </div>
+        <div
+          class="w-full md:w-1/5  flex flex-col gap-5 bg-white border-solid border rounded-md "
+        >
+          <img src="assets/adwa-event.jpg" alt="adwa-event" />
+          <div class="flex flex-col gap-3 px-3">
+            <p class="text-md">African Union Conference</p>
+            <p class="text-[#4e4e4e] text-sm">
+              African Union Building, Addis Ababa
+            </p>
+          </div>
+          <div
+            class="mt-20 md:mt-20 border-solid border-t p-3 flex items-center justify-between "
+          >
+            <div class="flex gap-2 items-baseline">
+              <i class="fa-regular fa-user text-slate-400 text-2xl"></i>
+              <p class="text-md text-slate-500">African Union</p>
+              <i class="bi bi-patch-check-fill text-[#3897F0]"></i>
+            </div>
+            <p class="text-slate-500 text-sm">10min ago</p>
+          </div>
+        </div>
+        <div
+          class="w-full md:w-1/5 flex flex-col gap-5 bg-white border-solid border rounded-md"
+        >
+          <img src="assets/adwa-event.jpg" alt="adwa-event" />
+          <div class="flex flex-col gap-3 px-3">
+            <p class="text-md">National Athletics Event</p>
+            <p class="text-[#4e4e4e] text-sm">Addis Ababa</p>
+          </div>
+          <div
+            class="mt-20 md:mt-20 border-solid border-t p-3 flex justify-between"
+          >
+            <div class="flex items-center gap-2">
+              <i class="fa-regular fa-user text-slate-400 text-2xl"></i>
+              <p class="text-md text-slate-500 w-32">
+                Ethiopian 
+                <i class="bi bi-patch-check-fill text-[#3897F0]"></i>
+              </p>
+            </div>
+            <p class="text-slate-500 text-sm">2days ago</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container  bg-gray-100 flex flex-row   justify-center items-center min-h-screen ">
+      <p class="text-md text-slate-500 w-36"> &copy; 2023 event-addis </p>
+      <div class="w-fo md:w-1/2 text-right md:text-right md:flex-row">
+        <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full mr-4">Login</button>
+        <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full">Sign Up</button>
+    </div>
+  </div>
+
+            
+
+           
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+
   </body>
 </html>
