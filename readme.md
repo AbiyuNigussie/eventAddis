@@ -23,19 +23,6 @@ To view the website, simply navigate to [eventAddis.com].
 
 - HTML
 - CSS
-<<<<<<< Updated upstream
-- JavaScriptgit 
-- Bootstrap framework
-- Tailwind framework
-
-## Authors :black_nib:
-
-* **Michael Solomon** <[Mckienzie7](https://github.com/Mckienzie7)>
-* **Abiyu Nigussie** <[AbiyuTolosa](https://github.com/AbiyuTolosa)>
-* **Yonathan Wendesen** <[yonathan001](https://github.com/yonathan001)>
-* **Bereket Eshete** <[Bereket-Eshete](https://github.com/Bereket-Eshete)>
-* **Nahom B/Gebriel** <[exam32](https://github.com/exam32)>
-=======
 - JavaScript
 - Bootstrap framework
 - Tailwind framework
