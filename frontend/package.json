@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
+    "test": "echo \"Error: no test specified\" && exit 1"
+=======
 
     "test": "echo \"Error: no test specified\" && exit 1",
 
     "start": "npx tailwindcss -i ./css/style.css -o ./dist/tailwind_style.css --watch"
 
+>>>>>>> 537493b67e97e943a47e57a12236e1194d11effc
   },
   "author": "",
   "license": "ISC",

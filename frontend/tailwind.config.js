@@ -2,11 +2,13 @@
 module.exports = {
 
   content: ["./**/*.{html,js}"],
-
-  content: ["./*.{html,js}"],
-
-  theme: {
+  
+theme: {
     extend: {},
   },
   plugins: [],
 };
+/**
+ * @module.expert - 
+ * tailwind config update
+ */
