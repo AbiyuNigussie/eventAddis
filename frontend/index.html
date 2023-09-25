@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/tailwind_style.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -10,9 +12,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
     />
     <title>Home</title>
   </head>
@@ -32,52 +46,76 @@
           <i class="fa-solid fa-calendar-days pr-2"></i> Events
         </li>
         <li class="text-slate-50 py-5 px-10 active:bg-slate-800">
-          <i class="fa-solid fa-phone pr-2"></i> Contact
+          <a href="contact/contact.html">
+            <i class="fa-solid fa-phone pr-2"></i> Contact
+          </a>
         </li>
       </ul>
     </div>
     <div class="bg-cover bg-center min-h-screen md:min-h-min bg-one slider">
       <div class="bg-black/75 min-h-screen md:min-h-min">
-        <div class="flex items-center pt-8 pl-4 gap-4 px-4 justify-between md:justify-between">
+        <div
+          class="flex items-center pt-8 gap-4 px-4 justify-between md:justify-between"
+        >
           <div class="flex items-center gap-2">
             <div class="md:hidden">
               <i
-              class="fa-solid fa-bars text-white cursor-pointer burgerNavIcon"
-            ></i>
+                class="fa-solid fa-bars text-white cursor-pointer burgerNavIcon"
+              ></i>
             </div>
-            
+
             <h3 class="text-white capitalize text-xl">logo</h3>
           </div>
 
-          
           <div class="md:hidden">
-            <button class="bg-green-500 hover:bg-green-600 px-6 py-2 rounded-md text-white font-bold mr-4">Sign Up</button>
+            <button
+              class="bg-green-500 hover:bg-green-600 px-6 py-2 rounded-md text-white font-bold mr-4"
+            >
+              Sign Up
+            </button>
           </div>
           <ul class="hidden md:block">
             <li class="list-none inline-block px-5">
-              <a href="#" class="text-white text-xl no-underline px-2">Home</a>
+              <a
+                href="#"
+                class="text-white text-xl md:text-base no-underline px-2"
+                >Home</a
+              >
             </li>
             <li class="list-none inline-block px-5">
-              <a href="#" class="text-white text-xl no-underline px-2">About</a>
+              <a
+                href="#"
+                class="text-white text-xl md:text-base no-underline px-2"
+                >About</a
+              >
             </li>
             <li class="list-none inline-block px-5">
-              <a href="#" class="text-white text-xl no-underline px-2">Event</a>
+              <a
+                href="#"
+                class="text-white text-xl md:text-base no-underline px-2"
+                >Event</a
+              >
             </li>
             <li class="list-none inline-block px-5">
-              <a href="#" class="text-white text-xl no-underline px-2"
-                >contact</a
+              <a
+                href="contact/contact.html"
+                class="text-white text-xl md:text-base no-underline px-2"
+                >Contact</a
               >
             </li>
           </ul>
           <div class="hidden sm:hidden md:block md:mr-4 lg:mr-10">
-            
-            <button class="bg-green-500 hover:bg-green-600 px-6 py-2 rounded-md text-white font-bold mr-4">Sign Up</button>
-           <button
-            class="border-solid border-white border-2 px-6 py-2 text-white rounded-md font-bold"
-          >
-            Post Event
-          </button>
-        </div>
+            <button
+              class="bg-green-500 hover:bg-green-600 px-6 py-2 md:px-3 md:py-1.5 font-normal rounded-md text-white mr-4"
+            >
+              Sign Up
+            </button>
+            <button
+              class="border-solid border-white border-2 px-3 py-1 text-white rounded-md"
+            >
+              Post Event
+            </button>
+          </div>
         </div>
         <div
           class="min-h-full md:min-h-min px-6 py-32 md:px-4 md:py-20 text-center flex flex-col gap-5 md:block md:text-left"
@@ -91,125 +129,174 @@
           <div class="flex flex-col mt-48 md:mt-10 gap-5 md:block">
             <a
               href="#"
-              class="text-white py-2 md:mr-10 md:py-1 md:px-3 border-solid rounded-md border-white border text-2xl md:text-xl no-underline bg-transparent"
+              class="text-white py-2 md:mr-10 md:py-1 md:px-3 border-solid rounded-md border-white border text-2xl md:text-base no-underline bg-transparent"
               >Events</a
             >
             <a
               href="#"
-              class="text-white py-2 md:py-1 md:px-5 border-solid rounded-md border-white border text-2xl md:text-xl no-underline bg-transparent"
+              class="text-white py-2 md:py-1 md:px-5 border-solid rounded-md border-white border text-2xl md:text-base no-underline bg-transparent"
               >Join</a
             >
           </div>
         </div>
       </div>
     </div>
-    <div class=" bg-[#f7f8f9] min-h-full  flex flex-col">
-      <p class="py-5 px-5 text-2xl text-gray-600 md:ml-24">Trending Events</p>
-      <div
-        class="flex flex-col md:flex-row gap-5 justify-center items-center "
-      >
-        <div
-          class="w-full md:w-1/5  flex flex-col gap-5 bg-white border-solid border rounded-md "
+    <div class="bg-white min-h-full flex flex-col md:px-16">
+      <div class="flex items-center justify-between">
+        <p class="py-5 px-5 text-2xl text-gray-600">Trending Events</p>
+        <a
+          href="#"
+          class="hidden md:flex md:items-baseline md:gap-1 hover:text-blue-500"
         >
-          <img src="assets/adwa-event.jpg" alt="adwa-event" />
-          <div class="flex flex-col gap-3 px-3">
-            <p class="text-md">African Union Conference</p>
-            <p class="text-[#4e4e4e] text-sm">
-              African Union Building, Addis Ababa
+          <p class="text-sm flex">See more</p>
+          <i class="fa-solid fa-2xs fa-greater-than"></i>
+        </a>
+      </div>
+      <div class="flex flex-col md:flex-row gap-5">
+        <div
+          class="w-full md:w-1/4 flex flex-col gap-5 bg-white border-solid border-x border-b rounded-b-lg rounded-t-xl"
+        >
+          <div class="max-w-full h-52 md:max-h-44 relative">
+            <div
+              class="px-3 py-2 text-xl md:px-3 md:py-2 border rounded-full absolute right-4 bottom-[-10%] md:right-2 bg-white shadow-sm hover:shadow-md"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <a href="#" class="block h-full">
+              <img
+                src="assets/kids-event.jpg"
+                alt=""
+                class="h-full w-full md:rounded-tl-xl md:rounded-tr-xl"
+            /></a>
+          </div>
+          <div class="flex flex-col px-3 gap-2">
+            <a
+              href="#"
+              class="text-xl text-black hover:no-underline hover:text-black"
+            >
+              Understanding and Helping Your Demand Avoidant Child
+            </a>
+            <p class="text-red-500 font-semibold text-sm">
+              Wednesday • 9:30 PM GMT+3
             </p>
-          </div>
-          <div
-            class="mt-20 md:mt-20 border-solid border-t p-3 flex items-center justify-between "
-          >
-            <div class="flex gap-2 items-baseline">
-              <i class="fa-regular fa-user text-slate-400 text-2xl"></i>
-              <p class="text-md text-slate-500">African Union</p>
-              <i class="bi bi-patch-check-fill text-[#3897F0]"></i>
-            </div>
-            <p class="text-slate-500 text-sm">10min ago</p>
+            <p class="text-[#6f7287]">Free</p>
+            <a href="/hello" class="hover:text-blue-500 w-fit"
+              >Child Minister</a
+            >
           </div>
         </div>
+
         <div
-          class="w-full md:w-1/5 flex flex-col gap-5 bg-white border-solid border rounded-md"
+          class="w-full md:w-1/4 flex flex-col gap-5 bg-white border-solid border-x border-b rounded-b-lg rounded-t-xl"
         >
-          <img src="assets/adwa-event.jpg" alt="adwa-event" />
-          <div class="flex flex-col gap-3 px-3">
-            <p class="text-md">National Athletics Event</p>
-            <p class="text-[#4e4e4e] text-sm">Addis Ababa</p>
-          </div>
-          <div
-            class="mt-20 md:mt-20 border-solid border-t p-3 flex justify-between"
-          >
-            <div class="flex items-center gap-2">
-              <i class="fa-regular fa-user text-slate-400 text-2xl"></i>
-              <p class="text-md text-slate-500 w-32">
-                Ethiopian 
-                <i class="bi bi-patch-check-fill text-[#3897F0]"></i>
-              </p>
+          <div class="max-w-full h-52 md:max-h-44 relative">
+            <div
+              class="px-3 py-2 text-xl md:px-3 md:py-2 border rounded-full absolute right-4 bottom-[-10%] md:right-2 bg-white shadow-sm hover:shadow-md"
+            >
+              <i class="fa-regular fa-heart"></i>
             </div>
-            <p class="text-slate-500 text-sm">2days ago</p>
+            <a href="#" class="block h-full"
+              ><img
+                src="assets/event-one-min.jpg"
+                alt=""
+                class="h-full w-full md:rounded-tl-xl md:rounded-tr-xl"
+            /></a>
           </div>
-        </div>
-        <div
-          class="w-full md:w-1/5  flex flex-col gap-5 bg-white border-solid border rounded-md "
-        >
-          <img src="assets/adwa-event.jpg" alt="adwa-event" />
-          <div class="flex flex-col gap-3 px-3">
-            <p class="text-md">African Union Conference</p>
-            <p class="text-[#4e4e4e] text-sm">
-              African Union Building, Addis Ababa
+          <div class="flex flex-col px-3 gap-2">
+            <a
+              href="#"
+              class="text-xl text-black hover:no-underline hover:text-black"
+            >
+              Harvest Moon Gala: A Night of Elegance and Giving
+            </a>
+            <p class="text-red-500 font-semibold text-sm">
+              Tuesday • 2:30 AM GMT+3
             </p>
-          </div>
-          <div
-            class="mt-20 md:mt-20 border-solid border-t p-3 flex items-center justify-between "
-          >
-            <div class="flex gap-2 items-baseline">
-              <i class="fa-regular fa-user text-slate-400 text-2xl"></i>
-              <p class="text-md text-slate-500">African Union</p>
-              <i class="bi bi-patch-check-fill text-[#3897F0]"></i>
-            </div>
-            <p class="text-slate-500 text-sm">10min ago</p>
+            <p class="text-[#6f7287]">Free</p>
+            <a class="mb-2 hover:text-blue-500">Sheger City</a>
           </div>
         </div>
         <div
-          class="w-full md:w-1/5 flex flex-col gap-5 bg-white border-solid border rounded-md"
+          class="w-full md:w-1/4 flex flex-col gap-5 bg-white border-solid border-x border-b rounded-b-lg rounded-t-xl"
         >
-          <img src="assets/adwa-event.jpg" alt="adwa-event" />
-          <div class="flex flex-col gap-3 px-3">
-            <p class="text-md">National Athletics Event</p>
-            <p class="text-[#4e4e4e] text-sm">Addis Ababa</p>
-          </div>
-          <div
-            class="mt-20 md:mt-20 border-solid border-t p-3 flex justify-between"
-          >
-            <div class="flex items-center gap-2">
-              <i class="fa-regular fa-user text-slate-400 text-2xl"></i>
-              <p class="text-md text-slate-500 w-32">
-                Ethiopian 
-                <i class="bi bi-patch-check-fill text-[#3897F0]"></i>
-              </p>
+          <div class="max-w-full h-52 md:max-h-44 relative">
+            <div
+              class="px-3 py-2 text-xl md:px-3 md:py-2 border rounded-full absolute right-4 bottom-[-10%] md:right-2 bg-white shadow-sm hover:shadow-md"
+            >
+              <i class="fa-regular fa-heart"></i>
             </div>
-            <p class="text-slate-500 text-sm">2days ago</p>
+            <a href="#" class="h-full">
+              <img
+                src="assets/addis-ababa-min.jpg"
+                alt=""
+                class="h-full w-full md:rounded-tl-xl md:rounded-tr-xl"
+              />
+            </a>
+          </div>
+          <div class="flex flex-col px-3 gap-2">
+            <a
+              href="#"
+              class="text-xl text-black hover:no-underline hover:text-black"
+            >
+              Tech Innovators Summit: Shaping the Future Together
+            </a>
+            <p class="text-red-500 font-semibold text-sm">
+              Wednesday • 9:30 PM GMT+3
+            </p>
+            <p class="text-[#6f7287]">From - ETB 500</p>
+            <a class="mb-2 hover:text-blue-500">John Smith</a>
           </div>
         </div>
+        <div
+          class="w-full md:w-1/4 flex flex-col gap-5 bg-white border-solid border-x border-b rounded-b-lg rounded-t-xl"
+        >
+          <div class="max-w-full h-52 md:max-h-44 relative">
+            <div
+              class="px-3 py-2 text-xl md:px-3 md:py-2 border rounded-full absolute right-4 bottom-[-10%] md:right-2 bg-white shadow-sm hover:shadow-md"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <a href="#" class="h-full">
+              <img
+                src="assets/event-four-min.jpg"
+                alt=""
+                class="h-full w-full md:rounded-tl-xl md:rounded-tr-xl"
+              />
+            </a>
+          </div>
+          <div class="flex flex-col px-3 gap-2">
+            <a
+              href="#"
+              class="text-xl text-black hover:no-underline hover:text-black"
+              >Artistry in Bloom: A Springtime Soiree</a
+            >
+            <p class="text-red-500 font-semibold text-sm">
+              Wednesday • 9:30 PM GMT+3
+            </p>
+            <p class="text-[#6f7287]">Free</p>
+            <a class="mb-2 hover:text-blue-500">Sheger City</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="bg-slate-800 w-full h-28 md:h-36 mt-12 flex flex-col items-center justify-center md:flex-row md:justify-around md:px-20">
-      <div class="py-2.5 md:order-last ">
-        <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full mr-4">Login</button>
-        <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full">Sign Up</button>
+    <div
+      class="bg-slate-800 w-full h-28 md:h-36 mt-12 flex flex-col items-center justify-center md:flex-row md:justify-around md:px-20"
+    >
+      <div class="py-2.5 hidden md:block md:order-last">
+        <button
+          class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full mr-4"
+        >
+          Login
+        </button>
+        <button
+          class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full"
+        >
+          Sign Up
+        </button>
       </div>
 
-       <p class="text-white"> &copy; 2023 event-addis </p> 
+      <p class="text-white">&copy; 2023 event-addis</p>
     </div>
-    
-   
-  
-
-            
-
-           
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
